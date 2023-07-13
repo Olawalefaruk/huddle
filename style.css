@@ -33,7 +33,11 @@ p,
 .section-text-div,
 .section-combine-div,
 .footer-combine-div,
-.footer-logo-div {
+.footer-logo-div,
+header,
+section,
+aside,
+footer {
 
   margin: 0;
   padding: 0;
@@ -47,13 +51,13 @@ p,
   min-height: 100vh;
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
  
   background-image: url(./bg-hero-desktop.svg);
   background-repeat: no-repeat;
   background-size: 45vw 60vh;
   background-position: right 25vw top 0vh;
-  background-color: rgb(231, 248, 255);
+ 
 }
 
 .combine {
@@ -64,6 +68,10 @@ p,
   width: 100%;
   height: auto;
 
+}
+
+header {
+  background-color: rgba(231, 248, 255, 0.6);
 }
 
 .header-first-div {
@@ -89,6 +97,7 @@ p,
   display: flex;
   align-self: center;
   padding: 10px 40px;
+  
 }
 
 .header-text-div {
@@ -129,7 +138,7 @@ p {
 .section-combine-div {
   display: flex;
   flex-direction: column;
-  padding: 30px 40px 80px 40px;
+  padding: 30px 5px 80px 5px;
   
   background-color: white;
   width: 100%;
@@ -176,8 +185,8 @@ h3 {
   box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
   
   position: absolute;
-  bottom: 150px;
-  left: 450px;
+  top: -60px;
+  left: 110px;
   
 }
 
@@ -198,11 +207,16 @@ h2 {
   margin-top: 8px;
 }
 
+footer {
+  position: relative;
+  align-items: center;
+}
+
 .footer-combine-div {
   background-color: rgb(18, 0, 43);
   display: flex;
   flex-direction: column;
-  padding: 50px 40px 20px 40px;
+  padding: 50px 5px 20px 5px;
   width: 100%;
   
 }
@@ -218,6 +232,7 @@ h2 {
 .footer-first-div {
   display: flex;
   flex-direction: column;
+ 
 }
 
 .footer-mini-div {
@@ -270,13 +285,13 @@ ul {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    position: relative;
+    
    
     background-image: url(./bg-hero-mobile.svg);
     background-repeat: no-repeat;
     background-size: 45vw 60vh;
     background-position: right 25vw top 0vh;
-    background-color: rgb(231, 248, 255);
+    
   }
   
   .combine {
@@ -284,8 +299,12 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     height: auto;
+  }
+
+  header {
+    width: 80%;
   }
   
   .header-logo {
@@ -310,7 +329,6 @@ ul {
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 20px;
-    
   }
   
   h1 {
@@ -335,16 +353,19 @@ ul {
 
     height: 20px;
     width: 100px;
+    margin-left: 25%;
   }
   
   .mockup {
-    width: 200px;
+    width: 190px;
   }
-  
+  section{
+    width: 70%;
+  }
   .section-combine-div {
     display: flex;
     flex-direction: column;
-    padding: 30px 15px 80px 15px;
+    padding: 30px 5px 80px 5px;
     width: 100%;
   }
   
@@ -372,8 +393,8 @@ ul {
   
   .floating-div {
     padding: 10px 10px;
-    bottom: 290px;
-    left: 87px; 
+    top: -60px;
+    left: 30px; 
   }
   
   h2 {
@@ -385,10 +406,14 @@ ul {
     margin-bottom: 8px;
   }
   
+  footer {
+    width: 70%;
+  }
+  
   .footer-combine-div {
     display: flex;
     flex-direction: column;
-    padding: 50px 20px 20px 20px;
+    padding: 50px 10px 20px 10px;
    
   }
   
